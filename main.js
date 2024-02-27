@@ -14,3 +14,4 @@ var pais = 'Chile';
 var region = 'Región Metropolitana';
 var comuna = 'Maipú';
 var calle = 'Kafka';
+var numero = 644;
