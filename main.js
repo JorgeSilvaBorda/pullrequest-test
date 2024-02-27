@@ -3,3 +3,4 @@ const MAX = 100;
 const MID = 50;
 
 var nombre = 'Jorge';
+var apellido = 'Silva';
