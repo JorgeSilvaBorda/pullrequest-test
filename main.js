@@ -5,3 +5,5 @@ const MID = 50;
 var nombre = 'Jorge';
 var apPaterno = 'Silva';
 var apMaterno = 'Borda';
+
+var rut = '16355662-6';
