@@ -10,7 +10,7 @@ jobs:
     if: github.event.pull_request.merged == true
     steps:
       - name: Go to project dir
-        run: cd /home/jsilvab/dev/git-test/pullrequest-test
+        run: cd /home/jsilvab/dev/test-git/pullrequest-test
       - name: Checout Master Branch
         run: git checkout master
       - name: Pull code from master
