@@ -7,7 +7,6 @@ on:
 jobs:
   if_merged:
     if: github.event.pull_request.merged == true
-    runs-on: ubuntu-22.04
     steps:
       - name: Checout Master Branch
         run: git checkout master
