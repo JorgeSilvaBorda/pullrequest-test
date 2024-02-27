@@ -6,6 +6,7 @@ on:
       - master
 jobs:
   if_merged:
+    runs-on: [self-hosted, Linux, x64]
     if: github.event.pull_request.merged == true
     steps:
       - name: Checout Master Branch
