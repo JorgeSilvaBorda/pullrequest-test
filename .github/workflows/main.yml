@@ -7,7 +7,7 @@ on:
 jobs:
   merge-pull-request:
     runs-on: [self-hosted, Linux, x64]
-    if: github.event.pull_request.created == true
+    if: github.event.pull_request.opened == true
     steps:
       - name: Checout Master Branch
         run: git -C /home/jsilvab/dev/test-git/pullrequest-test checkout master
