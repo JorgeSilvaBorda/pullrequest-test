@@ -13,3 +13,4 @@ var fechaNac = '1986-03-27';
 var pais = 'Chile';
 var region = 'Región Metropolitana';
 var comuna = 'Maipú';
+var calle = 'Kafka';
