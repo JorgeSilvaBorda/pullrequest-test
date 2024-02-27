@@ -7,3 +7,5 @@ var apPaterno = 'Silva';
 var apMaterno = 'Borda';
 
 var rut = '16355662-6';
+
+var fechaNac = '1986-03-27';
