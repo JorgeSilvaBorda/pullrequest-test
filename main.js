@@ -19,3 +19,7 @@ var numero = 644;
 function sayHello(){
     console.log("Hello");
 }
+
+function sayGoodbye(){
+    console.log("Goodbye");
+}
