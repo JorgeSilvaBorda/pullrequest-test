@@ -9,3 +9,5 @@ var apMaterno = 'Borda';
 var rut = '16355662-6';
 
 var fechaNac = '1986-03-27';
+
+var pais = 'Chile';
