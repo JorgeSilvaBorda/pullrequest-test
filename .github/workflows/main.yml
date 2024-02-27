@@ -1,9 +1,9 @@
 on:
   pull_request:
     types:
-      - created
-    branches:
-      - master
+      - opened
+    #branches:
+      #- master
 jobs:
   merge-pull-request:
     runs-on: [self-hosted, Linux, x64]
