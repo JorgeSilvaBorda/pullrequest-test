@@ -7,5 +7,7 @@ jobs:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-22.04
     steps:
-      - run: |
-        git checkout master && git pull
+      - name: Checout Master Branch
+        run: git checkout master
+      - name: Pull code from master
+        run: git pull
