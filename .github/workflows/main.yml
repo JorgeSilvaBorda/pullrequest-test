@@ -1,15 +1,19 @@
 on:
   pull_request:
     types:
-      - closed
+      - created
     branches:
       - master
 jobs:
-  if_merged:
+  merge-pull-request:
     runs-on: [self-hosted, Linux, x64]
-    if: github.event.pull_request.merged == true
+    if: github.event.pull_request.created == true
     steps:
       - name: Checout Master Branch
         run: git -C /home/jsilvab/dev/test-git/pullrequest-test checkout master
-      - name: Pull code from master
-        run: git -C /home/jsilvab/dev/test-git/pullrequest-test pull
+      - name: Update Master Branch Locally
+        run: git -C /home/jsilvab/dev/test-git/pullrequest-test pull origin master
+      - name: Merge the dev branch into master branch
+        run: git -C /home/jsilvab/dev/test-git/pullrequest-test merge dev
+      - name: Push the merged code into remote master
+        run: git -C /home/jsilvab/dev/test-git/pullrequest-test push -u origin master
